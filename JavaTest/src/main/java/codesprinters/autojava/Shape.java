@@ -5,8 +5,11 @@ package codesprinters.autojava;
  */
 public interface Shape {
 
-    private double getArea();
+    public double getArea();
 
-    public void getName();
+    public String getName();
+
+
 
 }
+

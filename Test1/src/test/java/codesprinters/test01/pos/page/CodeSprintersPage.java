@@ -9,10 +9,10 @@ public class CodeSprintersPage extends PageObject{
 
     // URL CodeSprinters
     //public final static String CODESPRINTERS_URL = "http://agileszkolenia.pl/";
-    public final static String CODESPRINTERS_URL ="https://www.facebook.com/CodeSprinters/";
+    public final static String CODESPRINTERS_URL ="facebook.com/CodeSprinters/";
 
     //public final static String CODESPRINTERS_PAGE_TITLE = "Code Sprinters -";
-    public final static String CODESPRINTERS_PAGE_TITLE = "Code Sprinters - Home | Facebook";
+    public final static String CODESPRINTERS_PAGE_TITLE = "Code Sprinters - Strona główna | Facebook";
 
     public CodeSprintersPage(WebDriver drv) {
         super(drv);

@@ -39,7 +39,7 @@ public class CodeSprintersTests extends TestBase{
 
         googlePage.googleFor(SEARCH_KEY, CodeSprintersPage.CODESPRINTERS_PAGE_TITLE);
 
-        System.out.println("I'm leaving " + GooglePage.GOOGLE_URL); //log
+        //System.out.println("I'm leaving " + GooglePage.GOOGLE_URL); //log
 
         //Wait
         WebDriverWait wait = new WebDriverWait(driver, 20);
@@ -53,6 +53,8 @@ public class CodeSprintersTests extends TestBase{
 
         //ASSERTS
         //assert sprawdzający czy jesteśmy na odpowiedniej stronie
-        Assert.assertEquals(currentURL, CodeSprintersPage.CODESPRINTERS_URL);
+        Assert.assertTrue(
+                currentURL.endsWith(CodeSprintersPage.CODESPRINTERS_URL)
+        );
     }
 }

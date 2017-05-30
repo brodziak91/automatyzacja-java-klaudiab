@@ -1,4 +1,4 @@
-package codesprinters.test01;
+package codesprinters.test01.tests;
 
 import org.junit.Assert;
 import org.junit.Test;

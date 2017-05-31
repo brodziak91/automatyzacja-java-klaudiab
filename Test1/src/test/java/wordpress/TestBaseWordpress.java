@@ -18,6 +18,8 @@ public abstract class TestBaseWordpress {
     private final String PROPERTY_NAME = "webdriver.gecko.driver"; //final pole klasy, nie można jej zmienić
     private final String DRIVER_PATH = "C:\\Users\\brodziak\\Desktop\\Automatyzacja\\geckodriver.exe";
 
+
+
     @Before
     public void testSetUp(){
         System.setProperty(PROPERTY_NAME, DRIVER_PATH);

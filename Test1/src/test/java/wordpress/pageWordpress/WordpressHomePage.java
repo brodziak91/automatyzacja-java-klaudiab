@@ -12,7 +12,7 @@ public class WordpressHomePage extends PageObjectWordpress{
 
     public final static String WORDPRESS_URL ="https://autotestjava.wordpress.com/";
     // Points of interest
-
+    private String articleWithComment = "//article//span[@class='comments-link']//a[text()!='Leave a comment']";
     // -----------
 
     public WordpressHomePage(WebDriver drv) {
@@ -31,6 +31,11 @@ public class WordpressHomePage extends PageObjectWordpress{
                 resultWithPattern(pattern)
         );
         //klikamy na niego
+        element.click();
+    }
+
+    public void goToArticleWithComment(){
+        WebElement element = driver.findElement(By.xpath(articleWithComment));
         element.click();
     }
 
